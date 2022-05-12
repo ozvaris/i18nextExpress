@@ -9,7 +9,7 @@ const __dirname = path.resolve(path.dirname(''));
 
 i18next
   .use(Backend)
-  //.use(middleware.LanguageDetector)
+  .use(middleware.LanguageDetector)
   .init({
     preload: ['en', 'tr'],
     backend: {
